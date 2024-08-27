@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header_menu">
+            <img src="assets/logo.png">
+        </nav>
+
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+        <h1 class="presentacion_titulo"><strong>Encriptar/Desencriptar</strong></h1>
+            <textarea class="text_box" placeholder="Ingresa el texto aqui" id="cajaTextoEntrada"></textarea>
+        <div
+            class="presentacion_seccion_inferior">
+            <h3 class="presentacion_info">ℹ️ Solo letras minusculas y sin acentos</h3>
+            <section class="botones">
+            <button onclick="encriptar()" class="presentacion_boton1">Encriptar </button>
+            <button onclick="desencriptar()" class="presentacion_boton">Desencriptar</button>
+            </section>
+        </div>
+        </section class='imagenes' >
+        <div class="container_panel_derecho">
+            <textarea class="caja_resultado" id="resultado"></textarea>
+          <div class="posicion_texto" id="muneco"><img src="assets/Muñeco.png" class="muneco" ><h2 class="mensaje"><strong>Ningún mensaje fue encontrado</strong>
+          </h2><p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <button class="presentacion_botonc" id="botonc" disabled="true">Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por: Eduardo Vargas para el primer reto de ALURA Latam</p>
+    </footer>
+    <script src="app.js" ></script>
+</body>
+</html>
